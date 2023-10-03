@@ -57,10 +57,11 @@ const Dashboard = () => {
     return (
       <div className="container">
           <img src="https://static.coingecko.com/s/coingecko-logo-8903d34ce19ca4be1c81f0db30e924154750d208683fad7ae6f2ce06c76d0a56.png" height="50" alt="logo"></img>
-          <h1>Top 10 Criptovalute</h1>
+          <h1>Top 100 Criptovalute</h1>
           <table>
               <thead>
                   <tr>
+                      <th>#</th>
                       <th>Immagine</th>
                       <th onClick={() => handleSort('name')}><span className="symbolFil">{getSortIndicator('name')}</span> Nome</th>
                       <th onClick={() => handleSort('current_price')}><span className="symbolFil">{getSortIndicator('current_price')}</span> Prezzo</th>
@@ -74,6 +75,7 @@ const Dashboard = () => {
               <tbody>
                   {coins.map(coin => (
                       <tr key={coin.id}>
+                          <td>{coin.market_cap_rank}</td>
                           <td className="coin-image-cell">
                               <img src={coin.image} alt={coin.name} width="30" height="30"/> {/* 2. Aggiunto cella per l'immagine */}
                           </td>
