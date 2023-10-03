@@ -1,4 +1,6 @@
 Ecco un esempio di `README.md` per il tuo progetto:
+![coigeko](https://github.com/DomenicoCentrone/coingecko-api-app/assets/76876906/4be42713-4e34-4179-8f32-87ab72e2e9b6)
+[DEMO](https://jocular-baklava-b8d3ab.netlify.app/)
 
 ```markdown
 # Dashboard Criptovalute
